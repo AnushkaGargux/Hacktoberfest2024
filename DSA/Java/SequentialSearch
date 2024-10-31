@@ -1,0 +1,17 @@
+public class LargestNumberInArray {
+    public static void main(String[] args) {
+        int[] numbers = {3, 7, 2, 9, 5};
+        int largest = findLargest(numbers);
+        System.out.println("The largest number is: " + largest);
+    }
+
+    public static int findLargest(int[] array) {
+        int max = array[0]; // Assume first element is the largest
+        for (int num : array) {
+            if (num > max) {
+                max = num; // Update max if current element is larger
+            }
+        }
+        return max;
+    }
+}
